@@ -1,0 +1,48 @@
+body {
+  background-color: gray;
+  font-family: Helvetica;
+  color: white;
+  padding-left: 50px;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  list-style-type: none;
+  width: 100px;
+  height: 800px;
+  margin: 0;
+  padding: 0;
+}
+
+ul:nth-child(2n){
+  flex-direction: column-reverse;
+}
+
+li {
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  
+}
+
+li:nth-child(2n) {
+  background-color: black;
+}
+
+div{
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  width: 800px;
+  height: 800px;
+}
+
+img {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+}
