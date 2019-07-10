@@ -9,13 +9,13 @@
 
 
   function init() {
-    document.addEventListener("dragend", release);
-    document.addEventListener("dragenter", enter);
-    document.addEventListener("dragover", over);
+    document.addEventListener("dragend", release, false);
+    document.addEventListener("dragenter", enter, false);
+    document.addEventListener("dragover", over, false,);
     document.addEventListener("dragstart", (ev) => {
       ev.preventDefault();
       ev.dataTransfer.dropEffect = "move";
-    })
+    }, false)ö
     window.addEventListener("drop", function(e) {
       e = e || event;
       e.preventDefault();
