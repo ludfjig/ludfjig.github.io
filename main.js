@@ -15,7 +15,7 @@
     document.addEventListener("dragstart", (ev) => {
       ev.preventDefault();
       ev.dataTransfer.dropEffect = "move";
-    }, false)ö
+    }, false);
     window.addEventListener("drop", function(e) {
       e = e || event;
       e.preventDefault();
