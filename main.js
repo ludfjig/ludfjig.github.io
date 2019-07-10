@@ -13,6 +13,7 @@
     document.addEventListener("dragenter", enter);
     document.addEventListener("dragover", over);
     document.addEventListener("dragstart", (ev) => {
+      ev.preventDefault();
       ev.dataTransfer.dropEffect = "move";
     })
     board = new GameBoard();
