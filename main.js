@@ -16,6 +16,10 @@
       ev.preventDefault();
       ev.dataTransfer.dropEffect = "move";
     })
+    window.addEventListener("drop", function(e) {
+      e = e || event;
+      e.preventDefault();
+    }, false);
     board = new GameBoard();
     populateBoard();
   }
@@ -70,27 +74,27 @@
   }
 
   class Piece {
-    constructor(name,sqr){
+    constructor(name, sqr) {
       this.name = name;
       this.sqr = sqr;
     }
 
-    getName(){
+    getName() {
       console.log(this.name);
     }
 
-    isValidMove(){
+    isValidMove() {
       return true;
     }
   }
 
   class Rook extends Piece {
-    constructor(name, sqr){
+    constructor(name, sqr) {
       super(name, sqr);
     }
   }
 
-  function populateBoard(){
+  function populateBoard() {
 
   }
 
