@@ -7,18 +7,17 @@
 
   window.addEventListener("load", init);
 
-
   function init() {
-    document.addEventListener("dragend", release, false);
-    document.addEventListener("dragenter", enter, false);
-    document.addEventListener("dragover", over, false,);
-    document.addEventListener("dragstart", (ev) => {
-      ev.preventDefault();
-      ev.dataTransfer.dropEffect = "move";
-    }, false);
     window.addEventListener("drop", function(e) {
       e = e || event;
       e.preventDefault();
+    }, false);
+    document.addEventListener("dragend", release, false);
+    document.addEventListener("dragenter", enter, false);
+    document.addEventListener("dragover", over, false, );
+    document.addEventListener("dragstart", (ev) => {
+      ev.preventDefault();
+      ev.dataTransfer.dropEffect = "move";
     }, false);
     board = new GameBoard();
     populateBoard();
