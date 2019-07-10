@@ -2,7 +2,7 @@ body {
   background-color: gray;
   font-family: Helvetica;
   color: white;
-  padding-left: 50px;
+  margin: 0;
 }
 
 ul {
@@ -24,7 +24,7 @@ li {
   width: 100px;
   height: 100px;
   background-color: white;
-  
+
 }
 
 li:nth-child(2n) {
